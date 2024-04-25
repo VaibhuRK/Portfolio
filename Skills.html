@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+24&display=swap">
+    
+    <style>
+         li{
+      list-style-type: none;
+      display: inline-block;
+      width: 80px;
+      text-align: center;
+      margin: 20px;
+      
+      
+    }
+    nav{
+    background-color: hsl(291, 50%, 50%);
+    text-align: right;
+      margin: 20px;
+      padding-left: 20%
+    }
+    .marquee{
+        color:hsl(179, 50%, 50%);
+        font-size: 50px;
+            }
+    .html{
+        float: left;
+        padding-left: 300px;
+        padding-right: 100px;
+        padding-top: 200px;
+        color: aquamarine;
+        font-size: 30px;
+    } 
+    .css{
+         
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        color: aquamarine;
+        font-size: 30px;
+        
+    }        
+    .js{
+        float: left; 
+        padding-left: 0px;
+        padding-right: 50px;
+        padding-top: 150px;
+        color: aquamarine;
+        font-size: 30px;
+    }        
+    .sql{
+        float: left; 
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+        color: aquamarine;
+        font-size: 30px;
+    }    
+    h1{
+        text-align: center;
+        height: 20px;
+        font-family:'Dancing Script';
+        color: aqua;
+        font-size: 60px; 
+    }  
+    body{
+        background-image: url('gradient.webp');
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+    
+           
+    
+
+    </style>
+</head>
+<body>
+    
+    <div>
+        <nav>
+            <ul>
+                
+                <li> <a href="index.html"><span>Home</span></a></li>|
+                <li> <a href="About.html"><span>About</span></a></li>|
+                <li> <a href="Contact.html"><span>Contact</span></a></li>|
+                <li> <a href="Skills.html"><span>Skills</span></a></li>|
+
+                
+
+                
+
+            </ul>
+        </nav>
+    </div>
+    <marquee class="marquee" behavior="scroll" direction="right">Skills</marquee>
+
+    <script>
+        a = ['Html image.jpg','css image.jpg','javascript.jpg','SQL image.jpg']
+        
+        i=0
+        setInterval(function change(){
+            document.getElementById("id").src = a[i];
+            i++;
+            if (i>=a.length){
+                i=0;
+            }
+        },2000)
+       
+    </script>
+    <img src="Html image.jpg" width="100%" height="200px" id="id" class="button" />
+
+    
+    <h1 class="h1"><b>What I Know!</b></h1>
+
+    <div class="html"><b>HTML</b><img src="html logo img.jpg" height="100px" width="100px" alt="path wrong"></div>
+    
+    <div class="css"><b>CSS</b><img src="css logo img.jpg" height="100px" width="100px" alt="path wrong"></div>
+    <div class="js"><b>JavaScript</b><img src="js logo image.jpg" height="100px" width="100px" alt="path wrong"></div>
+    <div class="sql"><b>SQL</b><img src="sql logo img.jpg" height="100px" width="100px" alt="path wrong"></div>
+
+</body>
+</html>
